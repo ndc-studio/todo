@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer type="module" src="./script.js"></script>
+    <title>To do list</title>
+  </head>
+  
+  <body>
+    <div id="container">
+      <header>
+        <h1>To do list</h1>
+        <select id="color-mode">
+          <option id="light-mode">Light mode</option>
+          <option id="dark-mode">Dark mode</option>
+        </select>
+        <button type="reset" id="reset">🗑️ Delete all finished element</button>
+      </header>
+      <main>
+        <form id="form">
+          <input type="text" id="input" name="input" placeholder="Write here..." required>
+          <button type="submit" id="submit">Add to the list.</button>
+        </form>
+        <ul id="list" class="list">
+        </ul>
+      </main>
+      <footer>
+          <p>Create by <a href="https://github.com/ndc-studio" target="_blank" title="(GitHub link)">NDC Studio</a></p>
+        </footer>
+    </div>
+  </body>
+</html>
