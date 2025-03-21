@@ -24,7 +24,7 @@ body {
     position: absolute;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 80px;
+    grid-template-rows: 160px 1fr 80px;
 }
 
 header {
@@ -64,7 +64,7 @@ h1 {
     grid-row:  2 / 3;
     padding: 5px;
     background-color: var(--color);
-    color: var(--link-color); 
+    color: var(--link-color);
     position: relative;
     margin: auto;
     border-radius: 5px;
@@ -80,9 +80,9 @@ main {
 
 #form {  
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     position: relative;
-    top: 10px;
+    margin: auto;
     text-align: center;
 }
 
@@ -176,7 +176,7 @@ a {
     }
 
     #list {
-        width: 80%;
+        width: 85%;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
@@ -239,10 +239,25 @@ a {
         margin: auto;
         border-radius: 5px;
     }
+
+    #list {
+        width: 80%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
 }
 
 /* Mobiles */
 @media screen and (max-width: 480px) {
+    #container {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px 1fr 80px;
+    }
+
     header {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -292,7 +307,7 @@ a {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         position: relative;
-        top: 50px;
+        top: 0px;
     }
 }
 
@@ -343,12 +358,11 @@ a {
     }
     
     #list {
-        width: 70%;
+        width: 82%;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         position: relative;
-        top: 50px;
-        right: 15px;
+        right: 35px;
     }
 }
 
