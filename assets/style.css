@@ -25,6 +25,9 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 160px 1fr 80px;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 header {
@@ -41,6 +44,7 @@ h1 {
     grid-column: 1 / 4;
     text-align: center;
     background-color: var(--hfc-bg-color);
+    border-radius: 10px;
     object-fit: contain;
     width: 30%;
 }
@@ -93,6 +97,7 @@ main {
 }
 
 li {
+    font-size: 30px;
     position: relative;
     color: rgb(54, 54, 54);
     background-color: rgb(214, 214, 214);
@@ -117,11 +122,16 @@ li {
     left: 10px;
 }
 
+label {
+    font-size: 18px;
+} 
+
 .del {
     margin-top: 35px;
     position: absolute;
     right: 10px;
     bottom: 10px;
+    
 }
 
 label {
