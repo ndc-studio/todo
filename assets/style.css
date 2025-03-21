@@ -333,8 +333,8 @@ a {
     }
     
     #color-mode {
-        width: 100px;
-        height: 25px;
+        width: 120px;
+        height: 35px;
         grid-column: 1 / 4;
         grid-row: 2 / 3;
         padding: 5px;
